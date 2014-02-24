@@ -1,0 +1,35 @@
+{
+  "name": "repo-ejemplo",
+  "version": "0.0.1",
+  "description": "Simple servidor web de un fichero",
+  "main": "web.js",
+  "scripts": {
+    "test": "node web.js && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oslugr/repo-ejemplo.git"
+  },
+  "keywords": [
+    "test",
+    "aprendiendo",
+    "git",
+    "node",
+    "ci"
+  ],
+  "author": "JJ Merelo",
+  "license": "AGPL",
+  "bugs": {
+    "url": "https://github.com/oslugr/repo-ejemplo/issues"
+  },
+  "homepage": "https://github.com/oslugr/repo-ejemplo",
+  "dependencies": {
+    "markdown": "~0.5.0",
+    "express": "~3.4.8"
+  },
+    {
+	"engines": {
+	    "node": "0.10.x"
+	}
+    }
+}
