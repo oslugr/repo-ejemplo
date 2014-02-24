@@ -1,3 +1,3 @@
 all:
-	aspell check -d es README.md || exit 1
+	cat README.md | aspell list -d es -p .aspell.es.pws
 
