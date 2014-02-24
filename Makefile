@@ -1,3 +1,3 @@
 all:
-	aspell check -d es README.md
-	echo "Spell check OK"
+	aspell check -d es README.md || exit 1
+
