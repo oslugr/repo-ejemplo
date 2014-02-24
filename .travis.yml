@@ -6,4 +6,4 @@ complier:
   - gcc
 before_install:
   - sudo apt-get install aspell-es 
-script: OUTPUT=`cat README.md | aspell list -d es -p ./.aspell.es.pws`; if [ -n "$OUTPUT" ]; then exit 1; fi
+script: OUTPUT=`cat README.md | aspell list -d es -p ./.aspell.es.pws`; if [ -n "$OUTPUT" ]; then echo $OUTPUT; exit 1; fi
