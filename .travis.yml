@@ -6,4 +6,4 @@ complier:
   - gcc
 before_install:
   - sudo apt-get install aspell-es 
-script: aspell check README.md
+script: aspell check -d es README.md
