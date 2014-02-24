@@ -1,0 +1,9 @@
+branches:
+  except:
+    - gh-pages
+language: C
+complier:
+  - gcc
+before_install:
+  - sudo apt-get install aspell-es 
+script: aspell check README.md
