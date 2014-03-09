@@ -4,7 +4,7 @@ var md  = require("markdown").markdown;
 var app = express();
 var fs=require('fs');
 
-var files=['README'];
+var files=['README','curso/texto/mas-usos'];
 var routes= {};
 for ( var f in files ) {
     var file_content = fs.readFileSync(files[f]+".md",'utf8');
