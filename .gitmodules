@@ -1,0 +1,3 @@
+[submodule "curso"]
+	path = curso
+	url = git@github.com:oslugr/curso-git.git
