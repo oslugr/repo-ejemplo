@@ -18,6 +18,15 @@ app.get('/', function(req, res) {
   res.send(routes['README']);
 });
 
+app.get('/:ruta', function(req, res) {
+	    console.log("Request "+req.params.ruta);
+	    if ( routes[req.params.ruta] ) {
+		res.send(routes[req.params.ruta]);		
+	    } else {
+		res.send('Nostá',404);
+	    }
+});
+
 var port = Number(process.env.PORT || 5000);
 app.listen(port, function() {
   console.log("Listening on " + port);
