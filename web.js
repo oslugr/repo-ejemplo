@@ -15,15 +15,16 @@ for ( var f in files ) {
 
 app.get('/', function(req, res) {
 	    console.log(routes['README']);
-  res.send(routes['README']);
+	    res.send(routes['README']);
 });
 
-app.get('/:ruta', function(req, res) {
+app.get('/curso/texto/:ruta', function(req, res) {
 	    console.log("Request "+req.params.ruta);
-	    if ( routes[req.params.ruta] ) {
-		res.send(routes[req.params.ruta]);		
+	    var ruta_toda = "curso/texto/"+req.params.ruta;
+	    if ( routes[ruta_toda] ) {
+		res.send(routes[ruta_toda]);		
 	    } else {
-		res.send('Nostá',404);
+		res.send('Nostá '+ ruta_toda,404);
 	    }
 });
 
