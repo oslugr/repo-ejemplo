@@ -9,4 +9,4 @@ before_install:
  - npm install supertest
 
 script:
-  - node web.js && mocha
+  - node web.js & mocha
