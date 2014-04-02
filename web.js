@@ -4,17 +4,16 @@ var md  = require("markdown").markdown;
 var app = express();
 var fs=require('fs');
 
-var files=['README','curso/texto/mas-usos'];
+var files=['README','curso/texto/mas-usos', 'curso/texto/Introduccion', 'curso/texto/uso_basico'];
 var routes= {};
 for ( var f in files ) {
     var file_content = fs.readFileSync(files[f]+".md",'utf8');
-    console.log(f);
+    console.log('Leyendo ' + files[f]);
     routes[files[f]] = md.toHTML(file_content);
-    console.log(routes[f]);
 }
 
 app.get('/', function(req, res) {
-	    console.log(routes['README']);
+	    console.log('README');
 	    res.send(routes['README']);
 });
 
