@@ -28,6 +28,7 @@
     "express": "~3.4.8"
   },
 "devDependencies": {
+    "mocha":                 "~1.17.0",
     "xunit-file":             "~ 0.0.5"
   },
     "engines": {
