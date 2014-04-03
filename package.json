@@ -29,7 +29,7 @@
   },
 "devDependencies": {
     "xunit-file":             "~ 0.0.5"
-  }
+  },
     "engines": {
 	"node": "0.10.x"
     }
