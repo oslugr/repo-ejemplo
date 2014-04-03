@@ -8,7 +8,9 @@ node_js:
 before_install:
  - npm install supertest
  - npm install xunit-file
- - mkdir shippable/testresults
+
+before_script:
+ - mkdir -p shippable/testresults
 
 script:
   - XUNIT_FILE=shippable/testresults/xunit.xml mocha -R xunit-file 
