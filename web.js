@@ -28,9 +28,7 @@ app.get('/curso/texto/:ruta', function(req, res) {
 });
 
 var port = Number(process.env.PORT || 5000);
-var server = app.listen(port, function() {
-  console.log("Listening on " + port);
-});
+var server = app.listen(port);
 
 
 exports.server=server;
