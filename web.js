@@ -4,7 +4,7 @@ var md  = require("markdown").markdown;
 var app = express();
 var fs=require('fs');
 
-var files=['README','curso/texto/mas-usos', 'curso/texto/Introduccion', 'curso/texto/uso_basico'];
+var files=['README','curso/texto/mas_usos', 'curso/texto/introduccion', 'curso/texto/uso_basico'];
 var routes= {};
 for ( var f in files ) {
     var file_content = fs.readFileSync(files[f]+".md",'utf8');
@@ -28,6 +28,9 @@ app.get('/curso/texto/:ruta', function(req, res) {
 });
 
 var port = Number(process.env.PORT || 5000);
-app.listen(port, function() {
+var server = app.listen(port, function() {
   console.log("Listening on " + port);
 });
+
+
+exports.server=server;
