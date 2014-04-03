@@ -8,17 +8,17 @@ var files=['README','curso/texto/mas_usos', 'curso/texto/introduccion', 'curso/t
 var routes= {};
 for ( var f in files ) {
     var file_content = fs.readFileSync(files[f]+".md",'utf8');
-    console.log('Leyendo ' + files[f]);
+//    console.log('Leyendo ' + files[f]);
     routes[files[f]] = md.toHTML(file_content);
 }
 
 app.get('/', function(req, res) {
-	    console.log('README');
+//	    console.log('README');
 	    res.send(routes['README']);
 });
 
 app.get('/curso/texto/:ruta', function(req, res) {
-	    console.log("Request "+req.params.ruta);
+//	    console.log("Request "+req.params.ruta);
 	    var ruta_toda = "curso/texto/"+req.params.ruta;
 	    if ( routes[ruta_toda] ) {
 		res.send(routes[ruta_toda]);		
