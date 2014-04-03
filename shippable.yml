@@ -15,4 +15,4 @@ script:
   - mocha
 
 after_script:
-  - ./node_modules/.bin/mocha -R xunit ./tests > shippable/testresults/result.xml
+  - ./node_modules/.bin/mocha -R xunit ./test > shippable/testresults/result.xml
