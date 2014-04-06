@@ -24,8 +24,9 @@
   },
   "homepage": "https://github.com/oslugr/repo-ejemplo",
   "dependencies": {
-    "markdown": "~0.5.0",
-    "express": "~3.4.8"
+      "markdown": "~0.5.0",
+      "express": "~3.4.8",
+      "glob": "~ 3.2.9"
   },
 "devDependencies": {
     "mocha":                 "~1.17.0",

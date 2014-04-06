@@ -3,13 +3,19 @@ var express = require("express");
 var md  = require("markdown").markdown;
 var app = express();
 var fs=require('fs');
+var Glob= require('glob').Glob;
 
-var files=['README','curso/texto/mas_usos', 'curso/texto/introduccion', 'curso/texto/uso_basico', 'curso/texto/solucion_problemas'];
-var routes= {};
-for ( var f in files ) {
-    var file_content = fs.readFileSync(files[f]+".md",'utf8');
-//    console.log('Leyendo ' + files[f]);
-    routes[files[f]] = md.toHTML(file_content);
+var routes= { 'README': 'README.md'};
+
+var g = new Glob("curso/texto/*.md", {
+		     sync: true
+		 });
+console.log(g);
+for ( var m in g.found ) {
+    var file_content = fs.readFileSync(g.found[m],'utf8');
+    //    console.log('Leyendo ' + files[f]);
+    var route=g.found[m].split('.')[0];
+    routes[route] = md.toHTML(file_content);
 }
 
 app.get('/', function(req, res) {
