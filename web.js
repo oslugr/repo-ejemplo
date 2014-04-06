@@ -17,7 +17,8 @@ for ( var m in g.found ) {
     routes[route] = md.toHTML(file_content);
 }
 
-app.use("/img",express.static('curso/texto/img'));
+app.use("/img",express.static('curso/texto/img'))
+    .use("/curso/texto/img",express.static('curso/texto/img'));
 
 app.get('/', function(req, res) {
 //	    console.log('README');

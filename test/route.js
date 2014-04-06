@@ -42,6 +42,19 @@ describe('Web', function(){
 			     });
 		});
 
+	     
+	     it('Debería devolver una imagen ', function(){
+		    request.get("/curso/texto/img/wingit2.png")
+			.expect(200)
+			.end(function(err,res) {
+				 if (err) {
+				     throw err ;
+				 }
+			     });
+		});
+
+
+
 
 
 });
