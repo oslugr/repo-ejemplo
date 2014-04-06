@@ -4,7 +4,7 @@ var md  = require("markdown").markdown;
 var app = express();
 var fs=require('fs');
 
-var files=['README','curso/texto/mas_usos', 'curso/texto/introduccion', 'curso/texto/uso_basico'];
+var files=['README','curso/texto/mas_usos', 'curso/texto/introduccion', 'curso/texto/uso_basico', 'curso/texto/solucion_problemas'];
 var routes= {};
 for ( var f in files ) {
     var file_content = fs.readFileSync(files[f]+".md",'utf8');
@@ -31,4 +31,4 @@ var port = Number(process.env.PORT || 5000);
 var server = app.listen(port);
 
 
-exports.server=server;
+exports.server=server; // For testing
