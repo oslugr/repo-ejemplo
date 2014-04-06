@@ -10,7 +10,6 @@ var routes= { 'README': 'README.md'};
 var g = new Glob("curso/texto/*.md", {
 		     sync: true
 		 });
-console.log(g);
 for ( var m in g.found ) {
     var file_content = fs.readFileSync(g.found[m],'utf8');
     //    console.log('Leyendo ' + files[f]);
