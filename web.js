@@ -46,7 +46,6 @@ app.get('/img/:ruta', function(req, res) {
 });
 
 var port = Number(process.env.PORT || 5000);
-console.log('start');
 var server = app.listen(port);
 
 
