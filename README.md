@@ -7,5 +7,6 @@ en
 [este otro repositorio de GitHub](http://github.com/oslugr/curso-git). 
 
 Incluye una pequeña aplicación que sirve el material del curso
-convertido a HTML e integración continua usando diferentes servicios,
-así como deployment a Heroku.
+convertido a HTML e integración continua usando diferentes servicios
+(en concreto [Travis](http://travis-ci.com) y [Shippable](http://shippable.com),
+así como deployment al [PaaS Heroku](http://heroku.com).
