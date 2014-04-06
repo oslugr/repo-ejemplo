@@ -17,6 +17,8 @@ for ( var m in g.found ) {
     routes[route] = md.toHTML(file_content);
 }
 
+app.use("/img",express.static('curso/texto/img'));
+
 app.get('/', function(req, res) {
 //	    console.log('README');
 	    res.send(routes['README']);
@@ -32,8 +34,20 @@ app.get('/curso/texto/:ruta', function(req, res) {
 	    }
 });
 
+app.get('/img/:ruta', function(req, res) {
+//	    console.log("Request "+req.params.ruta);
+	    var ruta_toda = "curso/texto/img/"+req.params.ruta;
+	    if ( routes[ruta_toda] ) {
+		res.send(routes[ruta_toda]);		
+	    } else {
+		res.send('Nostá '+ ruta_toda,404);
+	    }
+});
+
 var port = Number(process.env.PORT || 5000);
+console.log('start');
 var server = app.listen(port);
 
 
 exports.server=server; // For testing
+
