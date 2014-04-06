@@ -31,5 +31,18 @@ describe('Web', function(){
 			     });
 		});
 
+	     
+	     it('Debería devolver una imagen', function(){
+		    request.get("/img/wingit1.png")
+			.expect(200)
+			.end(function(err,res) {
+				 if (err) {
+				     throw err ;
+				 }
+			     });
+		});
+
+
+
 });
 
