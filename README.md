@@ -6,7 +6,10 @@ Ejemplo de repositorio para trabajar en el
 en
 [este otro repositorio de GitHub](http://github.com/oslugr/curso-git). 
 
+[![Build Status](https://travis-ci.org/JJ/repo-ejemplo.png)](https://travis-ci.org/JJ/repo-ejemplo)
+
 Incluye una pequeña aplicación que sirve el material del curso
 convertido a HTML e integración continua usando diferentes servicios
 (en concreto [Travis](http://travis-ci.com) y [Shippable](http://shippable.com),
 así como deployment al [PaaS Heroku](http://heroku.com).
+
