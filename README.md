@@ -9,7 +9,7 @@ en
 [![Build Status](https://travis-ci.org/oslugr/repo-ejemplo.svg?branch=master)](https://travis-ci.org/oslugr/repo-ejemplo)
 
 Incluye una pequeña aplicación que sirve el material del curso
-convertido a HTML e integración continua usando diferentes servicios
+convertido a HTML y ficheros de configuración para integración continua usando diferentes servicios
 (en concreto [Travis](http://travis-ci.com) y [Shippable](http://shippable.com),
 así como deployment al [PaaS Heroku](http://heroku.com).
 
