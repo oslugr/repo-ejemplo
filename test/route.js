@@ -1,5 +1,3 @@
-// var should = require('should'); 
-
 var request = require('supertest');  
 // hay que arrancar el servidor antes. Más adelante probaremos esto http://51elliot.blogspot.com.es/2013/08/testing-expressjs-rest-api-with-mocha.html
 
