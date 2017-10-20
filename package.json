@@ -6,34 +6,34 @@
   "scripts": {
     "test": "node web.js && mocha"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/oslugr/repo-ejemplo.git"
-  },
-  "keywords": [
-    "test",
-    "aprendiendo",
-    "git",
-    "node",
-    "ci"
-  ],
-  "author": "JJ Merelo",
-  "license": "AGPL",
-  "bugs": {
-    "url": "https://github.com/oslugr/repo-ejemplo/issues"
-  },
-  "homepage": "https://github.com/oslugr/repo-ejemplo",
-  "dependencies": {
-      "markdown": "~0.5.0",
-      "express": "~3.4.8",
-      "glob": "~ 3.2.9"
-  },
-"devDependencies": {
-    "mocha":                 "~1.17.0",
-    "xunit-file":             "~ 0.0.5"
-  },
+    "repository": {
+	"type": "git",
+	"url": "git://github.com/oslugr/repo-ejemplo.git"
+    },
+    "keywords": [
+	"test",
+	"aprendiendo",
+	"git",
+	"node",
+	"ci"
+    ],
+    "author": "JJ Merelo",
+    "license": "AGPL",
+    "bugs": {
+	"url": "https://github.com/oslugr/repo-ejemplo/issues"
+    },
+    "homepage": "https://github.com/oslugr/repo-ejemplo",
+    "dependencies": {
+	"markdown": "~0.5.0",
+	"express": "~3.4.8",
+	"glob": "~ 3.2.9"
+    },
+    "devDependencies": {
+	"mocha":                 "~1.17.0",
+	"xunit-file":             "~ 0.0.5"
+    },
     "engines": {
-	"node": "0.10.x"
+	"node": "8.1.4"
     }
 }
 

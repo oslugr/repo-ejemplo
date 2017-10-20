@@ -3,7 +3,7 @@ language: node_js
 
 # version numbers, testing against two versions of node
 node_js:
-  - 0.10.25
+  - 8.1.4
 
 before_install:
  - npm install supertest
